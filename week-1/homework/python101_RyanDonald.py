@@ -1,5 +1,5 @@
 print("\r")
-print("*** Exercise 1 ***")
+print("***))) Exercise 1 (((***") # Fancy titles!!!
 print("\r")
 
 cost = float(input("What is the final total of your meal? "))
@@ -21,7 +21,7 @@ print("Tip amount: $" + "%.2f" % tip)
 print("Total amount: $" + "%.2f" % total)
 
 print("\r")
-print("*** Exercise 2 ***")
+print("***))) Exercise 2 (((***")
 print("\r")
 
 cost = float(input("What is the final total of your meal? "))
@@ -46,7 +46,7 @@ print("Total amount: $" + "%.2f" % total)
 print("Amount per person: $" + "%.2f" % split)
 
 print("\r")
-print("*** Exercise 3 ***")
+print("***))) Exercise 3 (((***")
 print("\r")
 
 coins = 0
@@ -62,7 +62,7 @@ while answer.lower() == "yes":
 print(f"Don't spend all {coins} coins in one place!")
 
 print("\r")
-print("*** Exercise 4 ***")
+print("***))) Exercise 4 (((***")
 print("\r")
 
 # I modified this to format some horizontal spaces into the box, just FYI.
@@ -80,7 +80,7 @@ while visible_height - 1 > 0:
 print("* " * width)
 
 print("\r")
-print("*** Exercise 5 ***")
+print("***))) Exercise 5 (((***")
 print("\r")
 
 space = " "
@@ -92,7 +92,7 @@ print(f"{space}" + f"{star * 5}")
 print(f"{star * 7}")
 
 print("\r")
-print("*** Exercise 6 ***")
+print("***))) Exercise 6 (((***")
 print("\r")
 
 count = 1
