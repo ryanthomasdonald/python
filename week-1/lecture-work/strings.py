@@ -71,9 +71,76 @@
 
 # print(sentence1, sentence2)
 
-first_name = "Ryan"
-last_name = "Donald"
+# first_name = "Ryan"
+# last_name = "Donald"
 
-sentence = f"Hello {first_name} {last_name}, how are you doing today?"
+# sentence = f"Hello {first_name} {last_name}, how are you doing today?"
 
-print(sentence)
+# print(sentence)
+
+# print(type(first_name))
+
+# print(isinstance(99, int))
+
+# name = input("What is your name? ")
+
+# print(f"Your name is {name}.")
+
+# age = 17
+# name = "Ryan"
+
+# if age >= 21:
+#     print("You can drink.")
+# elif age < 18:
+#     print("Take a hike.")
+# else:
+#     print("You can't drink.")
+
+# # if age == 25:
+#     print("WOO!")
+
+#     if name == "Ryan":
+#         print("Ryan is here.")
+
+# first_name = input("What is your first name? ")
+# last_name = input("What is your last name? ")
+
+# print("Hello. My name is " + first_name + " " + last_name + ".")
+
+# letter = input("Type a lowercase letter: ")
+
+# if letter == "a, e, i, o, u":
+#     print("Vowel")
+# elif letter == "y":
+#     print("Depends on context")
+# else:
+#     print("Not a vowel")
+
+#casting
+# age = int(input("What is your age? "))
+
+# print(type(age))
+
+# counter = 0
+
+# while counter < 10:
+#     print(counter)
+#     counter += 1
+
+# print("You have reached the end.")
+
+# say when
+# while True:
+#     answer = input("Say when: ")
+#     if answer.lower() == "when":
+#         break
+
+# print("You have reached the end.")
+
+num = input("Type a number: ")
+
+while num != "stop":
+    if float(num) % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
