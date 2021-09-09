@@ -2,7 +2,7 @@ print("\r")
 print("***))) Exercise 1 (((***") # Prints fancy titles!!!
 print("\r")
 
-cost = float(input("What is the final total of your meal? "))
+cost = float(input("What is the final total of your meal? $"))
 service = input("Was your service good, fair, or bad? ")
 
 if service.lower() == "good":
@@ -24,7 +24,7 @@ print("\r")
 print("***))) Exercise 2 (((***")
 print("\r")
 
-cost = float(input("What is the final total of your meal? "))
+cost = float(input("What is the final total of your meal? $"))
 service = input("Was your service good, fair, or bad? ")
 people = float(input("How many people are splitting the check? "))
 
@@ -53,7 +53,7 @@ coins = 0
 
 print(f"You have {coins} coins.")
 
-answer = input("Would you like another coin? Type 'yes' or 'no'. ")
+answer = input("Would you like a coin? Type 'yes' or 'no'. ")
 
 while answer.lower() == "yes":
     coins += 1
@@ -65,7 +65,7 @@ print("\r")
 print("***))) Exercise 4 (((***")
 print("\r")
 
-# I modified this to format some horizontal spaces into the box, just FYI.
+# I modified this to insert some horizontal spaces into the box, just FYI.
 
 print("BOX TIME!!!")
 width = int(input("Width? "))
