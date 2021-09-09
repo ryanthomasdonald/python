@@ -1,5 +1,5 @@
 print("\r")
-print("***))) Exercise 1 (((***") # Fancy titles!!!
+print("***))) Exercise 1 (((***") # Prints fancy titles!!!
 print("\r")
 
 cost = float(input("What is the final total of your meal? "))
