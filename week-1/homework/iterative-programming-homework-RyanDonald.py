@@ -170,14 +170,15 @@ print("***))) EXERCISE 7 GUESSING GAME!!! (((***")
 print("\r")
 
 # I had a bit of trouble trying to solve this with it being so early in the program, but I figured
-# it couldn't hurt to take the working code and modify it slightly to make a fun guessing game. :)
+# it couldn't hurt to take the solution's working code and modify it slightly to build a fun guessing
+# game. No need to give me credit for this one, but I'm having a blast FINALLY learning how to code. :)
 
 # Game Breakdown:
 # 1. Define encrypted statement.
 # 2. Create empty variable for decrypted statement.
 # 3. Define standard alphabet.
 # 4. Print encrypted statement.
-# 5. Print explanation of shifting.
+# 5. Print explanation of cypher shifting.
 # 6. Ask user how many characters to shift and assign the answer to a variable.
 # 7. Perform decryption using shift number input (here's the loop...)
 # 8. Print "decryption" and ask the user if it makes sense.
