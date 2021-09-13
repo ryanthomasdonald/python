@@ -137,10 +137,10 @@
 
 # print("You have reached the end.")
 
-num = input("Type a number: ")
+# num = input("Type a number: ")
 
-while num != "stop":
-    if float(num) % 2 == 0:
-        print("Even")
-    else:
-        print("Odd")
+# while num != "stop":
+#     if float(num) % 2 == 0:
+#         print("Even")
+#     else:
+#         print("Odd")
