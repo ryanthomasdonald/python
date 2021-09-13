@@ -9,10 +9,10 @@ nums0 = [3, 54, 2, 8, 56, 1, 9]
 
 def smallest(nums):
     nums.sort()
-    print(f"The smallest number is: {nums[0]}")
+    return nums[0]
 
 print("Here are our numbers: " + str(nums0))
-smallest(nums0)
+print(f"The smallest number is: {smallest(nums0)}")
 
 # -----------------------------------
 
@@ -27,10 +27,10 @@ nums0 = [3, 54, 2, 8, 56, 1, 9]
 
 def largest(nums):
     nums.sort()
-    print(f"The largest number is: {nums[-1]}")
+    return nums[-1]
 
 print("Here are our numbers: " + str(nums0))
-largest(nums0)
+print(f"The largest number is: {largest(nums0)}")
 
 # -----------------------------------
 
@@ -49,10 +49,10 @@ def shortest(strings):
         if len(word) < index:
             index = len(word)
             shortest_word = word
-    print("The shortest word is: " + (shortest_word))
+    return shortest_word
 
 print("Here are our words: " + str(strings0))
-shortest(strings0)
+print(f"The shortest word is: {shortest(strings0)}")
 
 # -----------------------------------
 
@@ -71,9 +71,9 @@ def longest(strings):
         if len(word) > index:
             index = len(word)
             longest_word = word
-    print("The longest word is: " + (longest_word))
+    return longest_word
 
 print("Here are our words: " + str(strings0))
-longest(strings0)
+print(f"The longest word is: {longest(strings0)}")
 
 # -----------------------------------
