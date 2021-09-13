@@ -11,7 +11,7 @@ def smallest(nums):
     nums.sort()
     return nums[0]
 
-print("Here are our numbers: " + str(nums0))
+print(f"Here are our numbers: {str(nums0)}")
 print(f"The smallest number is: {smallest(nums0)}")
 
 # -----------------------------------
@@ -29,7 +29,7 @@ def largest(nums):
     nums.sort()
     return nums[-1]
 
-print("Here are our numbers: " + str(nums0))
+print(f"Here are our numbers: {str(nums0)}")
 print(f"The largest number is: {largest(nums0)}")
 
 # -----------------------------------
@@ -51,7 +51,7 @@ def shortest(strings):
             shortest_word = word
     return shortest_word
 
-print("Here are our words: " + str(strings0))
+print(f"Here are our words: {str(strings0)}")
 print(f"The shortest word is: {shortest(strings0)}")
 
 # -----------------------------------
@@ -73,7 +73,7 @@ def longest(strings):
             longest_word = word
     return longest_word
 
-print("Here are our words: " + str(strings0))
+print(f"Here are our words: {str(strings0)}")
 print(f"The longest word is: {longest(strings0)}")
 
 # -----------------------------------
