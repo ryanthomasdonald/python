@@ -11,7 +11,7 @@ def smallest(nums):
     nums.sort()
     return nums[0]
 
-print(f"Here are our numbers: {str(nums0)}")
+print(f"Here are our numbers: {nums0}")
 print(f"The smallest number is: {smallest(nums0)}")
 
 # -----------------------------------
@@ -29,7 +29,7 @@ def largest(nums):
     nums.sort()
     return nums[-1]
 
-print(f"Here are our numbers: {str(nums0)}")
+print(f"Here are our numbers: {nums0}")
 print(f"The largest number is: {largest(nums0)}")
 
 # -----------------------------------
