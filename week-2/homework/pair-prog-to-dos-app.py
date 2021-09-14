@@ -77,7 +77,7 @@ Please select one of the following options:
 - Type "add" to add a task.
 - Type "remove" to remove a task.
 - Type "view" to view all tasks.
-- Type "quit" to quit.
+- Type "quit" to close the program.
 """)
 
     choice = input("What would you like to do?: ")
