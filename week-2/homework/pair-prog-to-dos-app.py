@@ -104,7 +104,7 @@ Please select one of the following options:
         app_running = False
         print("\n\nThank you for using...")
         print_task_manager()
-        print("""\n\nYour changes are saved, so you can always come back to check things off or add new items.
+        print("""\n\nYour changes are saved, so you can always come back to add new tasks or check them off.
 
 GOOD LUCK WITH YOUR DAY!
 """)
