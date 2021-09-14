@@ -12,6 +12,9 @@ def print_todos():
             index += 1
         print("")
 
+def invalid_input():
+    print("\nInvalid input. Get it together!")
+
 def print_your_day():
         print("""
 
@@ -84,19 +87,19 @@ Please select one of the following options:
     if choice == "add":
         print_add_task()
         new_item = input("What task would you like to add?: ")
-        priority = input("\nHow important is this task? 'High', 'Medium', 'Low'?: ").lower()
-        if priority == 'high' or priority == 'medium' or priority == 'low':
-            todos[priority].append(new_item)
-            print("\nList updated!")
+        add_priority = input("\nHow important is this task? 'High', 'Medium', 'Low'?: ").lower()
+        if add_priority == 'high' or add_priority == 'medium' or add_priority == 'low':
+            todos[add_priority].append(new_item)
+            print(f"\n{(new_item)} added!")
         else:
-            print("You did not choose correctly. Please prioritize your life!")
+            invalid_input()
     elif choice == "remove":
         print_remove_task()
         print_todos()
-        which_priority = input("What priority level is your task ('High', 'Medium', 'Low')? ").lower()
-        item_to_del = int(input("Which task would you like to remove? "))
-        print(f"{todos[which_priority][item_to_del - 1]} deleted!")
-        del todos[which_priority][item_to_del - 1]
+        rem_priority = input("Which priority level is your task ('High', 'Medium', 'Low')? ").lower()
+        item_to_del = int(input("\nInput the number of the task you'd like to remove: "))
+        print(f"\n{todos[rem_priority][item_to_del - 1]} removed!")
+        del todos[rem_priority][item_to_del - 1]
     elif choice == "view":
         print_your_day()
         print_todos()
@@ -107,7 +110,7 @@ Please select one of the following options:
         print("\n\nYour changes are saved, so you can always come back to add new tasks or remove completed tasks.")
         print("\n\n***))) GOOD LUCK WITH YOUR DAY!!! (((***\n\n")
     else:
-        print("\nYou did not choose correctly. Please prioritize your life!")
+        invalid_input()
 
 with open('todo.json', 'w') as fh:
     json.dump(todos, fh)
