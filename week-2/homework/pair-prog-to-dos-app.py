@@ -106,7 +106,7 @@ Please select one of the following options:
         print_task_manager()
         print("""\n\nYour changes are saved, so you can always come back to check things off or add new items.
 
-Good luck with your day!
+GOOD LUCK WITH YOUR DAY!
 """)
         
 with open('todo.json', 'w') as fh:
