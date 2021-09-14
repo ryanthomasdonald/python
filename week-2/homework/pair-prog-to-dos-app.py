@@ -90,24 +90,24 @@ Please select one of the following options:
             print("\nList updated!")
         else:
             print("You did not choose correctly. Please prioritize your life!")
-    if choice == "remove":
+    elif choice == "remove":
         print_remove_task()
         print_todos()
         which_priority = input("What priority level is your task ('High', 'Medium', 'Low')? ").lower()
         item_to_del = int(input("Which task would you like to remove? "))
         print(f"{todos[which_priority][item_to_del - 1]} deleted!")
         del todos[which_priority][item_to_del - 1]
-    if choice == "view":
+    elif choice == "view":
         print_your_day()
         print_todos()
-    if choice == "quit":
+    elif choice == "quit":
         app_running = False
         print("\n\nThank you for using...")
         print_task_manager()
-        print("""\n\nYour changes are saved, so you can always come back to add new tasks or check them off.
+        print("\n\nYour changes are saved, so you can always come back to add new tasks or remove completed tasks.")
+        print("\n\n***))) GOOD LUCK WITH YOUR DAY!!! (((***\n\n")
+    else:
+        print("\nYou did not choose correctly. Please prioritize your life!")
 
-GOOD LUCK WITH YOUR DAY!
-""")
-        
 with open('todo.json', 'w') as fh:
     json.dump(todos, fh)
