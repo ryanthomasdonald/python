@@ -87,19 +87,27 @@ Please select one of the following options:
     if choice == "add":
         print_add_task()
         new_item = input("What task would you like to add?: ")
-        add_priority = input("\nHow important is this task? 'High', 'Medium', 'Low'?: ").lower()
+        add_priority = input("\nOf what importance is this task? 'High', 'Medium', 'Low'?: ").lower()
         if add_priority == 'high' or add_priority == 'medium' or add_priority == 'low':
             todos[add_priority].append(new_item)
-            print(f"\n{(new_item)} added!")
+            print(f'\n"{(new_item)}" added to "{add_priority} priority"!')
         else:
             invalid_input()
     elif choice == "remove":
         print_remove_task()
         print_todos()
         rem_priority = input("Which priority level is your task ('High', 'Medium', 'Low')? ").lower()
-        item_to_del = int(input("\nInput the number of the task you'd like to remove: "))
-        print(f"\n{todos[rem_priority][item_to_del - 1]} removed!")
-        del todos[rem_priority][item_to_del - 1]
+        if rem_priority == 'high' or rem_priority == 'medium' or rem_priority == 'low':
+            item_to_del = int(input("\nInput the number of the task you'd like to remove: "))
+            if item_to_del == 0:
+                invalid_input()
+            elif item_to_del > len(todos[rem_priority]):
+                invalid_input()
+            elif item_to_del <= len(todos[rem_priority]):
+                print(f'\n"{todos[rem_priority][item_to_del - 1]}" removed from "{rem_priority} priority"!')
+                del todos[rem_priority][item_to_del - 1]
+        else:
+            invalid_input()
     elif choice == "view":
         print_your_day()
         print_todos()
