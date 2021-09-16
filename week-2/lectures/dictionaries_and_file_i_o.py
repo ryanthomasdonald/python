@@ -156,3 +156,45 @@
 #     print(data["first_name"])                    # prints from predefined dictionary named "data" (see above)
 
 # JSON works exactly the same way
+
+# Lab 4
+
+# Caching (to cache, weird spelling)
+
+# Write a letter_histogram function that takes a word as its input,
+# and returns a dictionary containing the tally of how many times
+# each letter in the alphabet was used in the word. For example:
+
+# >>>letter_histogram(‘banana’)
+# {‘a’: 3, ‘b’: 1, ‘n’: 2}
+
+# def letter_histogram(word):
+#     histogram = {}
+#     for letter in word:
+#         if letter in histogram:
+#             histogram[letter] += 1
+#         else:
+#             histogram[letter] = 1
+#     return histogram
+
+# print(letter_histogram("banana"))
+
+# Write a word_histogram function that takes a paragraph of
+# text as its input, and returns a dictionary containing
+# the tally of how many times each word in the alphabet was
+# used in the text. For example:
+
+# >>> word_histogram('To be or not to be')   ['To', 'be', 'or', 'not', 'to', 'be']
+
+# def word_histogram(phrase):
+#     lower_phrase = phrase.lower()
+#     split_phrase = lower_phrase.split()
+#     new_dict = {}
+#     for word in split_phrase:
+#         if word in new_dict:
+#             new_dict[word] += 1
+#         else:
+#             new_dict[word] = 1
+#     return new_dict
+
+# print(word_histogram("To be or not to be"))
